@@ -7,10 +7,10 @@ window.onload = function() {
         let msg = document.getElementsByClassName("message");
         console.log(email);
         if (email){
-            msg.innerHTML = `Thank you! Your email address ${email} has been added to our mailing list!`;
+            msg[0].innerHTML = `Thank you! Your email address ${email} has been added to our mailing list!`;
         }
         else{
-            msg.innerHTML = `Please enter a valid email address`;
+            msg[0].innerHTML = `Please enter a valid email address`;
         }
     });
 }
